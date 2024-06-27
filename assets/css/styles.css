@@ -1,0 +1,47 @@
+body {
+    background-color: #50728C;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    padding: 15px;
+}
+
+.card {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    background-color: #F7F9FC;
+}
+
+.btn-primary {
+    background-color: #2B4A6F;
+    border: none;
+    width: 100%;
+}
+
+.btn-primary:hover {
+    background-color: #1A344F;
+}
+
+input::placeholder {
+    color: #A0A4A8;
+}
+
+@media (max-width: 576px) {
+    .card {
+        padding: 20px;
+    }
+    
+    .container {
+        padding: 10px;
+    }
+
+    h2, h4 {
+        font-size: 1.5rem;
+    }
+
+    .btn-primary {
+        font-size: 0.875rem;
+    }
+}

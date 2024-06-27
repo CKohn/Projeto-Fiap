@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Fintech</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+<body>
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+        <div class="card p-4 shadow-lg">
+            <h2 class="text-center mb-4">Fintech</h2>
+            <h4 class="mb-3">Abra sua conta</h4>
+            <p class="mb-4">Leva poucos minutos</p>
+            <form>
+                <div class="form-group">
+                    <label for="nome">Nome <span class="text-danger">*</span></label>
+                    <input type="text" id="nome" class="form-control" placeholder="Digite seu nome completo" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail <span class="text-danger">*</span></label>
+                    <input type="email" id="email" class="form-control" placeholder="Digite seu melhor e-mail" required>
+                </div>
+                <div class="form-group">
+                    <label for="cpf">CPF <span class="text-danger">*</span></label>
+                    <input type="text" maxlength="14" id="cpf" class="form-control" placeholder="Digite seu CPF" required>
+                </div>
+                <div class="form-group">
+                    <label for="data-nascimento">Data de Nascimento <span class="text-danger">*</span></label>
+                    <input type="date" id="data-nascimento" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="celular">Celular <span class="text-danger">*</span></label>
+                    <input type="tel" id="celular" class="form-control" placeholder="(xx) xxxxx-xxxx" required>
+                </div>
+                <div class="form-group">
+                    <label for="senha">Senha <span class="text-danger">*</span></label>
+                    <div class="input-group">
+                        <input type="password" id="senha" class="form-control" placeholder="Digite sua senha" required>
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button" onclick="togglePassword()">
+                                <i class="fa fa-eye-slash"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <small class="form-text text-muted">Sua senha deve ter no mínimo 6 caracteres</small>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/scripts.js"></script>
+</body>
+</html>

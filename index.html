@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Fintech</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+<body>
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+        <div class="card text-center p-4 shadow-lg">
+            <h2 class="mb-4">Fintech</h2>
+            <h5 class="mb-4">Acesse sua conta</h5>
+            <form>
+                <div class="mb-3">
+                    <label for="cpf" class="form-label sr-only">CPF</label>
+                    <input type="text" id="cpf" maxlength="14" class="form-control" placeholder="CPF" required>
+                </div>
+                <div class="mb-3">
+                    <label for="senha" class="form-label sr-only">Senha de Acesso</label>
+                    <div class="input-group">
+                        <input type="password" id="senha" class="form-control" placeholder="Senha de Acesso" required>
+                        <button class="btn btn-outline-secondary" type="button" onclick="togglePassword()">
+                            <i class="fa fa-eye-slash"></i>
+                        </button>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Entrar</button>
+                <div class="mt-3">
+                    <a href="#">Esqueceu sua senha?</a>
+                </div>
+            </form>
+            <div class="mt-4">
+                <a href="./assets/pages/cadastro.html" class="btn btn-link">Iniciar novo cadastro</a>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/scripts.js"></script>
+</body>
+</html>
